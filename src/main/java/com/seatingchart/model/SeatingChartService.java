@@ -1,5 +1,6 @@
 package com.seatingchart.model;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,10 @@ public class SeatingChartService {
 	public SeatingChart getOneSeat(Integer floorSeatSEQ){
 		Optional<SeatingChart> optional= seatingChartRepository.findById(floorSeatSEQ);
 		return optional.orElse(null);
+	}
+	
+	public List<SeatingChart> getAll(){
+		return seatingChartRepository.findAll();
 	}
 	
 	

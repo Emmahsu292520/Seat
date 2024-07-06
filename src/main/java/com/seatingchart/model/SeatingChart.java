@@ -64,7 +64,10 @@ public class SeatingChart {
         this.seatNo = seatNo;
     }
 	
-	
+	public String toString() {
+		String result = "floorSeatSEQ = " +floorSeatSEQ+"\tfloorNo = "+floorNo+"\tseatNo = "+seatNo;
+		return result;
+	}
 	
 	
 }

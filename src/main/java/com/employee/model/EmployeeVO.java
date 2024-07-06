@@ -99,7 +99,7 @@ public class EmployeeVO {
 
 	
 	public String toString() {
-		String result = "empId=" + empId + "name =" + name +"EMail =" + eMail+
+		String result = "empId = " + empId + "\tname = " + name +"\tEMail = " + eMail+
 				"floorSeatSEQ ="+seatingChart.getFloorSeatSEQ();
 		return result;
 	}
